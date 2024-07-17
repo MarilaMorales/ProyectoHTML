@@ -20,11 +20,15 @@
 
 }
 
-.logo1{
-   
-   
-    
+#form1{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+
 }
+
 .logo2 {
     padding: 0;
     display: flex;
@@ -32,23 +36,20 @@
 }
 
 .icono {
-    margin-right: 0.2rem; /* Espacio entre íconos */
+    margin-right: 0.2rem; 
 }
 
 .icono img {
-    width: 30px; /* Tamaño de los íconos */
-    height: 30px;
+    width: 1.8rem; 
+    height: 1.8rem;
     margin-right: 2rem;
 }
 
 nav{
-    margin-left: 2rem;
-    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(165, 162, 162);
-    margin-bottom: 14px;
-    font-size: small;
-  
+    font-size:medium;
+    margin-top: 1.2rem;
 }
 
 nav{
@@ -71,10 +72,11 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #666;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     padding: 0.5rem;
+    letter-spacing: -0.25px;
 }
   
 nav ul li ul {
@@ -106,9 +108,7 @@ nav ul li ul li a {
     align-items: flex-start;
     margin-left: 0%;
     width:100% ;
-    margin-top: 2.5rem;
-
-
+    margin-top: 1.2rem;
 }
 
 .menu2 ul{
@@ -219,6 +219,24 @@ nav ul li ul li a {
   to {opacity: 1}
 }
 
+
+
+
+
+
+#tituloInamu{
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    font-style:normal;
+    font-weight: 800;
+    font-size: 2.8rem ;
+    line-height: 3.2rem;
+    text-align: center;
+    color: #007ea8;
+    letter-spacing: -1.3px;
+    font-family: sans-serif 
+
+}
 
 
 
