@@ -202,37 +202,133 @@ body {
 
 .cuadro{
 
-    justify-content: center;
     display: flex;
     padding-block: 3rem;
-    margin: 4rem;
+    margin: 3rem;
+    justify-content: center;
+   
    
 }
 
 .nosotras{
-    background-color: aqua;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.25px;
+    width: 450px;
+    background-color: #007ea8;
     color: white;
-    margin-right: 4rem;
-    
-    }
+    box-sizing: border-box;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+}
 
 
+#tituloNosotras{
+    margin-bottom: 0;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    font-size: 3rem;
+    margin-left: 3.3rem;
+
+}
+
+.textoNosotras{
+  
+    margin: 3.3rem;
+    margin-top: 0.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
 
 
 #picMujeres{
-
-    size: 4rem;
+    border-radius:22px;
+    align-self: self-end;
 
 }
 
 .emergencias{
-justify-content: center;
-display: flex;
+    width: 28.1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ebeef1;
+    display: flex;
+    flex-direction: column;
+   
+    text-align: center;
+}
+
+.textoEmer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
+
+#textoEmergencias{
+    font-size: 2.5rem;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: black;
+    margin-top: 4rem;
+
+}
+
+
+#textoEmergencias2{
+    font-size: 1.5rem;
+    line-height: 30px;
+    color: grey;
+
+}
+.imagenes911{
+
+    justify-content: space-between ;
+    margin-left: 2rem;
+    margin-top: 5rem;
+}
+
+#icono911{
+    border-radius:22px;
+    margin-left: 2rem;
+    size: 1.6rem;
+}
+
+#iconoTelefono{
+    margin-left: 2rem;
+    size: 1.6rem;
+}
+
+
+.backFondo{
+    
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    width: 28.1rem;
+    background-image: url("https://www.inamu.go.cr/image/journal/article?img_id=2623351&t=1647510016780");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}       
+.casaDeMujeres{
+   
+color: white;
+}
+
+
+
