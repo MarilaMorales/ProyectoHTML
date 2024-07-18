@@ -589,7 +589,161 @@ color: white;
     font-family: Helvetica, Arial, sans-serif;
     padding-top: 6rem;
     font-weight: 800;
-    color: #414040;
-   
+    color: #414040;   
 }
 
+
+
+/* -------------------------------ASI SOMOS---------------------------- */
+
+
+.AsiSomosContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: none;
+
+}
+
+.textoSomosContainer{
+    grid-row: 1;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+
+.textoSomosContainer2{
+    grid-row: 2;
+    color: #007ea8;
+    margin-top: 0.2rem;
+}
+
+.menuAsiSomosContainer{
+    grid-row: 3;
+}
+
+
+.menuAsiSomosContainer2{
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.historia{
+    grid-row: 1;
+}
+
+.nuestraHistoriaTexto{
+    grid-row: 2;
+}
+
+#tituloAsiSomos1{
+
+    font-family:Helvetica, Arial, sans-serif;;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.5px;
+    color: #007ea8;
+    width: 60%;
+    
+    
+}
+
+
+
+/* ----------------------------------------FOOTER--------------------------------- */
+
+
+
+.footer1{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/30% 30% 40%;
+    gap: 4rem;
+    row-gap: 0;
+    margin-left: 10rem;
+}
+
+.logoFooter{
+    grid-column: 1;
+    grid-row: 1;
+    align-self: self-start;
+    
+}
+
+#inamuFooter{
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.copyright{
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1rem;
+    color: #666;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: flex-start;
+    line-height: 2rem;
+    justify-content: center;
+    
+}
+
+.ccImagen{
+    grid-column: 2;
+    grid-row: 1;
+    align-content: center;
+    align-content: flex-end;
+    margin-bottom: 5rem;
+}
+
+.openDatabase{
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1rem;
+    color: #666;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-content: flex-start;
+    line-height: 2rem;
+}
+
+.mapaSitio{
+    grid-column: 3;
+    grid-row: 1;
+    align-content: center;
+    font-size: 18px;
+    margin: 0;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    color: #191919
+}
+
+.accesibilidad{
+    grid-column: 3;
+    grid-row: 2;
+    color: #666;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: start;
+    line-height: 2rem;
+
+ 
+}
+
+.redesFooter{
+    grid-column: 2;
+    grid-row: 3;
+    align-items: end;
+    margin-right: 4rem;
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top:6rem ;
+}
