@@ -1,54 +1,70 @@
-
-
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    
-    background-color:none;
-    
+.containerlogos2{
+    display: grid;
+    grid-template: 1fr 1fr / 37% 1fr 37%
 }
 
-.logo img {
-    max-height: 4rem; 
-    align-self: auto;
-}
-
-.containerlogos {
+.logo2{
+    grid-column: 2;
+    grid-row: 2;
+    align-items: end;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
     display: flex;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+    flex-direction: row-reverse;
+   
 }
 
-#form1{
+.icono{
+    padding: 0.5rem;
+}
+
+.buscar{
+    grid-column: 3;
+    grid-row: 1; 
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.25px;
-    align-self: self-end;
+    display: flex;
+    justify-content:center;
+    margin: 2rem;
+   
+}
+
+.buscar img{
+    float: right;
+    margin-left: 1rem;
 
 }
 
-.logo2 {
-    padding: 0;
+
+#buscar2{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.25px;
+}
+
+.logo1{
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     justify-content:center;
 }
 
-.icono {
-    margin-right: 0.2rem; 
+.header{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.icono img {
-    width: 1.8rem; 
-    height: 1.8rem;
-    margin-right: 2rem;
-}
-
+/* --------------------------------Barra de Enlaces---------------------------------- */
 nav{
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(165, 162, 162);
@@ -430,7 +446,7 @@ color: white;
 
 
 #tituloPoliticas{
-    margin-left: 12rem;
+    margin-left: 19.8rem;
     margin-top: 0.4rem;
     color: white;
     font-weight: 800;
@@ -440,7 +456,7 @@ color: white;
 }
 
 #tituloPoliticas2{
-    margin-left: 10.5rem;
+    margin-left: 18.3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family:  Helvetica, Arial, sans-serif;
@@ -461,7 +477,8 @@ color: white;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    margin-left: 0;
+
+
 }
 
 
@@ -495,7 +512,7 @@ color: white;
     color: black;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    margin-left: 9rem;
+    text-align: center;
 }
 
 #parrafoPieg{
@@ -515,7 +532,7 @@ color: white;
     color: black;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    margin-left: 9rem;
+    text-align: center;
 }
 
 #parrafoPlanovi{
@@ -565,9 +582,6 @@ color: white;
     flex-wrap: wrap;
     margin-top: 6.2rem;
     margin-bottom: 12rem;
-   
-    
-    
 }
 
 .carta{
@@ -871,29 +885,32 @@ color: white;
 
 /* ----------------------------------------FOOTER--------------------------------- */
 
-
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+}
 
 .footer1{
     display: grid;
-    grid-template: 1fr 1fr 1fr/30% 30% 40%;
-    gap: 4rem;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
+    gap: 1rem;
     row-gap: 0;
     background-color: #f7f7f7;
-    width: 100%;
+    width: 80%;
+    margin-left: 4rem;
 }
 
 .logoFooter{
     grid-column: 1;
     grid-row: 1;
-    align-self: self-start;
-    
 }
 
 #inamuFooter{
     display: flex;
     align-self: flex-start;
-
 }
+
 
 .copyright{
     grid-column: 1;
@@ -902,9 +919,8 @@ color: white;
     color: #666;
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-content: flex-start;
     line-height: 2rem;
-    justify-content: center;
+   
     
 }
 
@@ -913,18 +929,16 @@ color: white;
     grid-row: 1;
     align-content: center;
     align-content: flex-end;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .openDatabase{
     grid-column: 2;
     grid-row: 2;
-    font-size: 1rem;
     color: #666;
     font-style: normal;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-content: flex-start;
-    line-height: 2rem;
+    font-family: Arial;
+    line-height: 1.7rem;
 }
 
 .mapaSitio{
@@ -932,7 +946,8 @@ color: white;
     grid-row: 1;
     align-content: center;
     font-size: 18px;
-    margin: 0;
+    margin-left:0;
+    margin-top: 3rem;
     font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     color: #191919
@@ -944,7 +959,6 @@ color: white;
     color: #666;
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    align-items: start;
     line-height: 2rem;
 
  
