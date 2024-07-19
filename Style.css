@@ -1,3 +1,6 @@
+
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +29,7 @@
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     letter-spacing: -0.25px;
+    align-self: self-end;
 
 }
 
@@ -134,63 +138,58 @@ nav ul li ul li a {
     padding: 0.5rem 1rem;
 }
 
-.carrucel {
-    width: 1280px;
-    height: auto;
+
+/* ----------------------------------Carrusel de Fotos1------------------------------------- */
+
+
+
+.carousel {
+    width: 80%;
     margin: 50px auto 0;
     overflow: hidden;
-    border-collapse:collapse;
-    border-spacing: 0;
-    width: 70%;
-}
-.carrucel ul {
-display: flex;
-padding: 0;
-width: 400%;
-animation: slide 10s infinite alternate ease-in-out;
+    border-radius: 22px;
 }
 
-.carrucel li {
-width: 100%;
-list-style: none;
-position: relative;
+.carousel-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 600%; 
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
-.carrucel img {
-width: 100%;
+.carousel-item {
+    width: 16.666%; 
+    list-style: none;
 }
-@keyframes slide {
-0% {margin-left: 0;}
-20% {margin-left: 0;}
 
-25% { margin-left: -100%;}
-45% { margin-left: -100%;}
-
-50% { margin-left: -200%;}
-70% { margin-left: -200%;}
-
-75% { margin-left: -300%;}
-100% { margin-left: -300%;}
-}
-@media(max-width:991px) {
-body {
-    padding: 30px;
-}
-.carrucel {
+.carousel img {
     width: 100%;
+    height: auto;
+    display: block;
 }
-}
 
-
-
+@keyframes slide {
+    0% { margin-left: 0; }
+    12.5% { margin-left: 0; }
+   
+    25% { margin-left: -100%; }
+    37.5% { margin-left: -100%; }
+   
+    50% { margin-left: -200%; }
+    62.5% { margin-left: -200%; }
+   
+    75% { margin-left: -300%; }
+    87.5% { margin-left: -300%; }
+}  
 
 
 #tituloInamu{
     margin-top: 5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
     font-style:normal;
     font-weight: 800;
-    font-size: 2.8rem ;
+    font-size: 2.3rem ;
     line-height: 3.2rem;
     text-align: center;
     color: #007ea8;
@@ -205,12 +204,14 @@ body {
     padding-block: 3rem;
     margin: 3rem;
     justify-content: center;
+    width: 80%;
+    margin-left: 6.4rem;
    
    
 }
 
 .nosotras{
-    width: 450px;
+    width: 50%;
     background-color: #007ea8;
     color: white;
     box-sizing: border-box;
@@ -247,11 +248,12 @@ body {
 #picMujeres{
     border-radius:22px;
     align-self: self-end;
+    
 
 }
 
 .emergencias{
-    width: 28.1rem;
+    width: 50%;
     font-family: Helvetica, Arial, sans-serif;
     box-sizing: border-box;
     border-radius: 20px;
@@ -373,12 +375,62 @@ color: white;
     font-size: 1.3rem;
 }
 
+/* ----------------------------------------Card Slider-------------------------------- */
+
+
+
+.carousel2 {
+    width: 80%;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.carousel-list2 {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 600%; 
+    animation: slide 60s infinite alternate ease-in-out;
+}
+
+.carousel-item2 {
+    width: 16.666%; 
+    list-style: none;
+}
+
+.carousel2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    12.5% { margin-left: 0; }
+   
+    25% { margin-left: -100%; }
+    37.5% { margin-left: -100%; }
+   
+    50% { margin-left: -200%; }
+    62.5% { margin-left: -200%; }
+   
+    75% { margin-left: -300%; }
+    87.5% { margin-left: -300%; }
+}  
+
+#flechas{
+    size: 3rem;
+}
+
+
+
 
 /*------------------------------------POLITICAS NACIONALES------------------*/
 
 
 #tituloPoliticas{
-    margin-left: 17rem;
+    margin-left: 12rem;
     margin-top: 0.4rem;
     color: white;
     font-weight: 800;
@@ -388,7 +440,7 @@ color: white;
 }
 
 #tituloPoliticas2{
-    margin-left: 15.5rem;
+    margin-left: 10.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family:  Helvetica, Arial, sans-serif;
@@ -417,7 +469,7 @@ color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    width: 90%;
+    width: 80%;
     background-color: white;
     border-radius:22px;
     padding: 1.5rem;
@@ -435,14 +487,55 @@ color: white;
 
 #textoPieg{
     grid-column: 2 / 3;
+    
 }
+
+#tituloPieg2{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    margin-left: 9rem;
+}
+
+#parrafoPieg{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #666;
+}
+
+
+#tituloPlanovi{
+    font-size: 2.5rem;
+    color: black;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    margin-left: 9rem;
+}
+
+#parrafoPlanovi{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    color: #666;
+}
+
 
 .planovi{
     display: grid;
     margin-top: 4rem;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    width: 90%;
+    width: 80%;
     background-color: white;
     border-radius:22px;
     padding: 1.5rem;
@@ -472,6 +565,7 @@ color: white;
     flex-wrap: wrap;
     margin-top: 6.2rem;
     margin-bottom: 12rem;
+   
     
     
 }
@@ -599,57 +693,180 @@ color: white;
 
 .AsiSomosContainer{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: none;
-
+    grid-template: 1fr 1fr 1fr;
+   
 }
 
 .textoSomosContainer{
     grid-row: 1;
     display: flex;
-    justify-content: space-around;
+    margin-left: 12.5rem;
     margin-top: 3rem;
+    font-size: 20px;
+    color: #007EA8;
+    font-family: arial;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: -0.25px;
 }
-
 
 .textoSomosContainer2{
     grid-row: 2;
     color: #007ea8;
-    margin-top: 0.2rem;
+    margin-left: 13rem;
+   
 }
 
 .menuAsiSomosContainer{
     grid-row: 3;
+    margin-left: 12.5rem;
+    color: #007EA8;
+    font-family: arial;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    font-size: 0.9rem;
+   
 }
 
 
 .menuAsiSomosContainer2{
-    display: grid;
-    grid-template-rows: 20% 80%;
+    display: flex;
+    justify-content: center;
+    color: #666;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.25px;
+    margin-left: 5.2rem;
 }
 
 .historia{
     grid-row: 1;
+    font-size: 1.8rem;
+    color: #4b4b4b;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+
+}
+
+.menuAsiSomosContainer3{
+    display: grid;
+    grid-template: 10% 90% / 1fr ;
+    width: 80%;
+    justify-self: center;
+    
 }
 
 .nuestraHistoriaTexto{
     grid-row: 2;
+    margin-bottom: 12rem;
 }
 
-#tituloAsiSomos1{
+#tituloAsiSomos2{
 
-    font-family:Helvetica, Arial, sans-serif;;
+    font-family:Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.5px;
     color: #007ea8;
-    width: 60%;
-    
+    width: 60%;    
+}
+
+
+
+.menuAsiSomos1 ul{
+    list-style-type: none;
+   
+}
+
+.menuAsiSomosContainer{
+
+    border-bottom: 1px solid rgba(169, 169, 169, 0.801);
     
 }
 
+.menuAsiSomos1 ul li{
+    display:inline;
+    padding-left:3px;
+    padding-right:3px; 
+    text-align: center;
+    padding-right: 2.2rem;
+}
+
+
+/* ------------------------------------ Contactenos---------------------------------- */
+
+
+#contactoTexto{
+   color: #0098c8;
+   font-family: Arial;
+   font-size: 1.2rem;
+   margin-left: 2rem;
+}
+
+.contactenos{
+    color: #0098c8;
+    font-family: Arial;
+    font-size: 2rem;
+
+}
+
+.contactarnos{
+
+    color: grey;
+    font-family: Arial;
+    font-size: 1.4rem;
+}
+
+
+.contactoContainer{
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.tablaContainer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 11rem;
+}
+
+#boldContactenos{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.tablaContainer2{
+   width: 90%;
+   border-collapse: collapse;
+   border-spacing: 0%;
+   font-family: arial;
+   
+}
+
+.tablaContainer2 img{
+    float: left;
+    margin-right: 0.4rem;
+}
+
+.tablaContainer2 th{
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: #0098c8;
+    color: white;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.tablaContainer2 td{
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    text-align: left;
+}
 
 
 /* ----------------------------------------FOOTER--------------------------------- */
@@ -661,7 +878,8 @@ color: white;
     grid-template: 1fr 1fr 1fr/30% 30% 40%;
     gap: 4rem;
     row-gap: 0;
-    margin-left: 10rem;
+    background-color: #f7f7f7;
+    width: 100%;
 }
 
 .logoFooter{
@@ -747,3 +965,7 @@ color: white;
     justify-content: space-around;
     padding-top:6rem ;
 }
+
+
+
+
